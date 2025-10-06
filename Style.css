@@ -1,0 +1,140 @@
+:root {
+  --bg: #ffffff;
+  --fg: #111111;
+  --accent: #2b6cb0;
+  --max-width: 1000px;
+  --base-font: 18px;
+  --line: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-size: var(--base-font);
+  line-height: var(--line);
+}
+
+/* Cabeçalho */
+.site-header {
+  border-bottom: 2px solid #eee;
+  background: linear-gradient(180deg, rgba(43,108,176,0.06), transparent);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Navegação principal */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  color: var(--fg);
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background: rgba(43,108,176,0.1);
+}
+
+/* Menu de acessibilidade */
+.access-menu {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.access-menu button {
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: var(--max-width);
+  margin: 1.25rem auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 1.25rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Rodapé */
+.project-footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Acessibilidade extra */
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  position: static;
+  padding: 0.5rem;
+  background: #000;
+  color: #fff;
+}
+
+.high-contrast {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.high-contrast a {
+  color: yellow !important;
+}
+
+.large-spacing {
+  line-height: 2;
+}
+
+@media (max-width: 640px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
