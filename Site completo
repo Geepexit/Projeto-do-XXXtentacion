@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XXXTentacion — Projeto de Gabriel Pereira</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <h1>XXXTentacion</h1>
+      <p class="subtitle">Projeto de Gabriel Pereira</p>
+
+      <!-- Menu de acessibilidade -->
+      <nav aria-label="Menu de Acessibilidade" class="access-menu">
+        <button id="increaseText" aria-pressed="false">Aumentar fonte</button>
+        <button id="decreaseText" aria-pressed="false">Diminuir fonte</button>
+        <button id="toggleContrast" aria-pressed="false">Alto contraste</button>
+        <button id="toggleSpacing" aria-pressed="false">Maior espaçamento</button>
+      </nav>
+
+      <!-- Navegação principal -->
+      <nav role="navigation" aria-label="Navegação principal" class="main-nav">
+        <ul>
+          <li><a href="#biografia">Biografia</a></li>
+          <li><a href="#musicas">Músicas famosas</a></li>
+          <li><a href="#morte">Como morreu</a></li>
+          <li><a href="#controversias">Controvérsias</a></li>
+          <li><a href="#discografia">Discografia (seleção)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="biografia" aria-labelledby="bio-title">
+      <h2 id="bio-title">Biografia</h2>
+      <p>
+        <strong>Nome:</strong> Jahseh Dwayne Ricardo Onfroy (conhecido como XXXTentacion).<br/>
+        <strong>Nascimento:</strong> 23 de janeiro de 1998.<br/>
+        <strong>Origem:</strong> Plantation / Broward County, Flórida, EUA.<br/>
+        <strong>Atuação:</strong> Rapper, cantor e compositor, associado a movimentos como emo rap e SoundCloud rap.
+      </p>
+    </section>
+
+    <section id="musicas" aria-labelledby="musicas-title">
+      <h2 id="musicas-title">Músicas famosas</h2>
+      <ul>
+        <li><em>Sad!</em></li>
+        <li><em>Jocelyn Flores</em></li>
+        <li><em>Moonlight</em></li>
+        <li><em>Look at Me!</em></li>
+        <li><em>Hope</em></li>
+      </ul>
+      <p>Essas faixas foram grandes sucessos comerciais e continuam populares em plataformas de streaming.</p>
+    </section>
+
+    <section id="morte" aria-labelledby="morte-title">
+      <h2 id="morte-title">Como morreu</h2>
+      <p>
+        Em 18 de junho de 2018 XXXTentacion foi morto a tiros em Deerfield Beach, Flórida,
+        após um roubo premeditado no estacionamento de uma concessionária. Vários suspeitos
+        foram indiciados e, posteriormente, condenados por assassinato e roubo relacionado ao caso.
+      </p>
+    </section>
+
+    <section id="controversias" aria-labelledby="controv-title">
+      <h2 id="controv-title">Controvérsias e legado</h2>
+      <p>
+        A carreira de Onfroy foi marcada por debates: ele tinha acusações legais sérias (incluindo acusações de violência doméstica),
+        mas também muitos fãs e artistas lembram dele pelo impacto musical, suas letras emotivas e acção em causas relacionadas à saúde mental.
+      </p>
+    </section>
+
+    <section id="discografia" aria-labelledby="disc-title">
+      <h2 id="disc-title">Discografia (seleção)</h2>
+      <ul>
+        <li><strong>17</strong> (2017)</li>
+        <li><strong>?</strong> (2018)</li>
+        <li><strong>Skins</strong> (póstumo, 2018)</li>
+        <li><strong>Bad Vibes Forever</strong> (póstumo, 2019)</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
